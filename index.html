@@ -1,0 +1,23 @@
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+	<p>Trian the network for XOR</p>
+	<p>
+		Number of Training Runs: <input type="text" id="numOfTrainingRuns" value="10000"><br>
+		Learning Rate (between 0 and 1): <input type="text" id="learningRate" value="0.3"><br>
+		<input type="submit" value="train network" onclick="trainNetwork()">
+	</p>
+	<p>
+		<ul style="list-style-type:none">
+			<li>[0,0] -> <span id="0-0"></span></li>
+			<li>[0,1] -> <span id="0-1"></span></li>
+			<li>[1,0] -> <span id="1-0"></span></li>
+			<li>[1,1] -> <span id="1-1"></span></li>
+		</ul>
+	</p>
+</body>
+</html>
